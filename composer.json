@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "TrayLabs\\InfluxDB\\": "src/"
+            "Modis\\InfluxDB\\": "src/"
         }
     },
     "require": {
