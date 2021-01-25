@@ -2,6 +2,40 @@
 
 A service made to provide, set up and use the library from influxdata [influxdb-php](https://github.com/influxdata/influxdb-php/) in Laravel.
 
+## Installing
+
+* Install by composer command:
+
+```sh
+composer require modis/laravel-influxdb
+```
+
+* Or add this line to require section of ```composer.json``` and execute on your terminal ```$ composer install```
+
+```json
+"require": {
+    "modis/laravel-influxdb": "^1.0"
+}
+```
+
+
+## This package use auto-discover, if using less than version laravel 5.5 you must use below settings
+
+* Add this lines to yours config/app.php (Use only with Laravel version less than 5.5 )
+
+```php
+'providers' => [
+//  ...
+    Modis\InfluxDB\Providers\ServiceProvider::class,
+]
+```
+
+```php
+'aliases' => [
+//  ...
+    'InfluxDB' => Modis\InfluxDB\Facades\InfluxDB::class,
+]
+```
 
 * Define env variables to connect to InfluxDB
 
