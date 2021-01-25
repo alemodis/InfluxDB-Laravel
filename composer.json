@@ -1,0 +1,32 @@
+{
+    "name": "modis/laravel-influxdb",
+    "description": "A service made to provide, set up and use the library from influxdata influxphp in Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandros Modis",
+            "email": "alex@redcase.gr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TrayLabs\\InfluxDB\\": "src/"
+        }
+    },
+    "require": {
+        "influxdb/influxdb-php": "^1.15",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modis\\InfluxDB\\Providers\\ServiceProvider"
+            ],
+            "aliases": {
+                "InfluxDB": "Modis\\InfluxDB\\Facades\\InfluxDB"
+            }
+        }
+   }
+}
