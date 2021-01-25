@@ -14,7 +14,7 @@ composer require modis/laravel-influxdb
 
 ```json
 "require": {
-    "modis/laravel-influxdb": "^1.0"
+    "modis/laravel-influxdb": "^1.2"
 }
 ```
 
